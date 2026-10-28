@@ -1,0 +1,25 @@
+DESCUBRO LAS FORMAS DE MI AULA — Diccionario digital interactivo
+====================================================================
+
+FLUJO:  PORTADA  →  CÍRCULO · CUADRADO · TRIÁNGULO · RECTÁNGULO · ÓVALO  →  JUEGO  →  FINAL
+
+CÓMO ABRIRLO
+  Abre index.html en el navegador (o sube la carpeta a cualquier hosting).
+  No necesita instalación.
+
+DÓNDE VA CADA ARCHIVO
+  assets/img/portada.jpg        Imagen de presentación (también vale .png / .webp / .jpeg)
+  assets/video/circulo.mp4    Video de la lección (4:3, ej. 960x720, sin audio)
+  assets/video/circulo_card.mp4    Video del juego (cuadrado, ej. 480x480, liviano)
+  ... lo mismo para: cuadrado, triangulo, rectangulo, ovalo
+
+  Si falta la portada, se muestra una portada provisional.
+  Si falta el video de una figura, esa figura se omite automáticamente.
+
+CAMBIAR / AGREGAR FIGURAS
+  Todo está en un solo lugar: la lista ITEMS al inicio de js/main.js
+  (nombre, emoji, color, frase, pregunta del juego y nombres de los videos).
+
+PREPARAR VIDEOS (opcional, requiere ffmpeg)
+  ./preparar_videos.sh mi_video.mov circulo
+  Genera circulo.mp4 (960x720) y circulo_card.mp4   (480x480), sin audio.
